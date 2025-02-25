@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input1" >
+    <br>    
+    <input type="text" id="input2" >
+    <br>
+    <button onclick="addition()">+</button>
+    <button onclick="soustraction()">-</button>
+    <button onclick="multiplication()">x</button>
+    <button onclick="division()">/</button>
+    <br>
+    <input type="text" id="resultat" >
+    <script>
+        function addition(){
+            var input1 = document.getElementById("input1").value;
+            var input2 = document.getElementById("input2").value;
+            var resultat = parseInt(input1) + parseInt(input2);
+            document.getElementById("resultat").value = resultat;
+        }
+        function soustraction(){
+            var input1 = document.getElementById("input1").value;
+            var input2 = document.getElementById("input2").value;
+            var resultat = parseInt(input1) - parseInt(input2);
+            document.getElementById("resultat").value = resultat;
+        }
+        function multiplication(){
+            var input1 = document.getElementById("input1").value;
+            var input2 = document.getElementById("input2").value;
+            var resultat = parseInt(input1) * parseInt(input2);
+            document.getElementById("resultat").value = resultat;
+        }
+        function division(){
+            var input1 = document.getElementById("input1").value;
+            var input2 = document.getElementById("input2").value;
+            var resultat = parseInt(input1) / parseInt(input2);
+            document.getElementById("resultat").value = resultat;
+        }
+    </script>
+</body>
+</html>
